@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Water+Brush&display=swap');
+
+
+.contenedor {
+    width: 100%;
+    
+margin: 0 auto;
+    display: grid;
+ gap: 20px;
+   
+    grid-template-areas: "header header header"
+                         "desarrollo desarrollo desarrollo"
+                         "contenido contenido contenido"
+                         "footer footer footer";
+
+                         grid-template-columns: 1fr 1fr 1fr;
+                         grid-template-rows: repeat(4, auto);
+}
+
+
+
+.contenedor .header {
+    grid-area: header;
+    background-color: green;
+   color: antiquewhite;
+    display: grid;
+   place-items: center;
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'Water Brush', cursive;
+ 
+}
+
+.header .subtitulo{
+    display: flex;
+    row-gap: 100fr;
+    color:antiquewhite;
+}
+.subtitulo1{
+    color: antiquewhite;
+
+}
+   
+
+h1{
+        display: inline-block;
+        margin: 0 0.5rem;
+      
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+    
+}
+.desarollo{
+    background-color: brown;
+    display: grid;
+    grid-area:
+    desarollo desarollo desarollo 
+    contenido contenido contenido 
+    
+    ;
+    
+    
+}
+
+
+.final{
+    background-color: blueviolet;
+    color: antiquewhite;
+    grid-area: footer;
+    display: grid;
+    place-content: center;
+
+
+}
+
+div>.h2{
+    display: flex;
+
+}
+@keyframes h1 
